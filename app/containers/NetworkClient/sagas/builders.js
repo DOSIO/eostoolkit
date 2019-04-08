@@ -42,6 +42,8 @@ export function* buildReader(activeNetwork) {
 // this is triggered by the buildDispatcher
 export function* buildWriter(signer, activeNetwork) {
   try {
+    console.log('activeNetwork:', activeNetwork);
+
     const signerClientConfig = {
       protocol: activeNetwork.endpoint.protocol,
       blockchain: activeNetwork.network.network,
@@ -57,6 +59,9 @@ export function* buildWriter(signer, activeNetwork) {
       chainId: activeNetwork.network.chainId,
       keyPrefix: activeNetwork.network.prefix || 'EOS'
     };
+
+
+
     const protocol = activeNetwork.endpoint.protocol;
     const networkWriter = signer.eos(signerClientConfig, Eos, networkOptions, protocol);
     const identity = yield call(fetchIdentity, signer, activeNetwork);
