@@ -11,12 +11,12 @@ const airgrabs = [
     url: 'https://BillionaireToken.com',
   },
   {
-      symbol: 'ATD',
-      account: 'eosatidiumio',
-      method: 'signup',
-      description: 'Payments & Budget Management Decentralized App Leveraging the Blockchain, Cryptocurrency and AI Technologies. Drops happen every 24 hours, Airgrab Today!',
-      url: 'https://www.atidium.io/',
-    },
+    symbol: 'ATD',
+    account: 'eosatidiumio',
+    method: 'signup',
+    description: 'Payments & Budget Management Decentralized App Leveraging the Blockchain, Cryptocurrency and AI Technologies. Drops happen every 24 hours, Airgrab Today!',
+    url: 'https://www.atidium.io/',
+  },
   {
     symbol: 'BRM',
     account: 'openbrmeos11',

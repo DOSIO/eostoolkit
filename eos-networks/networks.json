@@ -1,5 +1,23 @@
 [
   {
+    "name": "SMG Mainnet",
+    "description": "SMG Mainnet",
+    "owner": "SMG Mainnet",
+    "chainId": "cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f",
+    "type": "mainnet",
+    "prefix":"EOS",
+    "network": "eos",
+    "endpoints": [
+      {
+        "name": "EOS BlockSmith",
+        "protocol": "http",
+        "port": 8888,
+        "url": "47.107.41.135",
+        "description": "EOS BlockSmith SMG Mainnet API"
+      }
+    ]
+  },
+  {
     "name": "EOS Mainnet",
     "description": "The EOS Mainnet",
     "owner": "The EOS community",
@@ -70,24 +88,6 @@
         "port": 443,
         "url": "nodes.get-scatter.com",
         "description": "Load balancer of various public nodes provided by scatter"
-      }
-    ]
-  },
-  {
-    "name": "SMG Mainnet",
-    "description": "SMG Mainnet",
-    "owner": "SMG Mainnet",
-    "chainId": "cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f",
-    "type": "mainnet",
-    "prefix":"EOS",
-    "network": "eos",
-    "endpoints": [
-      {
-        "name": "EOS BlockSmith",
-        "protocol": "http",
-        "port": 8888,
-        "url": "47.107.41.135",
-        "description": "EOS BlockSmith SMG Mainnet API"
       }
     ]
   },
