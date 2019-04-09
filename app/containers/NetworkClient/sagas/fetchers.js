@@ -7,6 +7,8 @@ import { tokensUrl, networksUrl, claimsUrl } from 'remoteConfig';
 import { loadedNetworks, updateNetworks, loadedAccount, setNetwork } from '../actions';
 import { makeSelectIdentity, makeSelectReader, makeSelectTokens, makeSelectNetworks, makeSelectActiveNetwork } from '../selectors';
 
+import networksConfig from './config/networks'
+
 /*
 *
 * NETWORKS
@@ -18,8 +20,9 @@ import { makeSelectIdentity, makeSelectReader, makeSelectTokens, makeSelectNetwo
 export function* fetchNetworks() {
   try {
     // fetch the remote network list
-    const data = yield fetch(networksUrl);
-    const rawNetworks = yield data.json();
+    //const data = yield fetch(networksUrl);
+    //let rawNetworks = yield data.json();
+    let rawNetworks = networksConfig;
 
     const networks = rawNetworks.map(network => {
       const { endpoints, ...networkDetails } = network;
@@ -37,8 +40,8 @@ export function* fetchNetworks() {
     });
 
     // get default
-    const network = networks.find(n => n.network === 'eos' && n.type === 'mainnet');
-    const endpoint = network.endpoints.find(e => e.name === 'Greymass');
+    const network = networks.find(n => n.network === 'eos' && n.type === 'SMG mainnet');
+    const endpoint = network.endpoints.find(e => e.name === 'SMG mainnet');
 
     // build activeNetwork
     const activeNetwork = {

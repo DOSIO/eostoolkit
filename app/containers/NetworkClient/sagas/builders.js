@@ -42,7 +42,7 @@ export function* buildReader(activeNetwork) {
 // this is triggered by the buildDispatcher
 export function* buildWriter(signer, activeNetwork) {
   try {
-    console.log('activeNetwork:', activeNetwork);
+    console.error('activeNetwork:', activeNetwork);
 
     const signerClientConfig = {
       protocol: activeNetwork.endpoint.protocol,
