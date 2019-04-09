@@ -133,7 +133,7 @@ class Dashboard extends React.Component {
         <OfflineClient />
         <Sidebar
           routes={dashboardRoutes}
-          logoText={'EOSTOOLKIT.IO'}
+          logoText={'圣马歌区块链'}
           logo={logo}
           image={image}
           handleDrawerToggle={this.handleDrawerToggle}
